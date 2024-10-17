@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Reflection.Emit;
+using cohort_backend.wwwapi.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace cohort_backend.wwwapi.Data
@@ -26,6 +27,6 @@ namespace cohort_backend.wwwapi.Data
         }
 
         //public DbSet<Post> Post { get; set; }
-        //public DbSet<User> Users { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }
