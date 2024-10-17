@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace cohort_backend.wwwapi.Models
 {
-    [Table("contacts")]
-    public class Contact
+    [Table("users")]
+    public class User
     {
         [Key]
         [Column("id")]
