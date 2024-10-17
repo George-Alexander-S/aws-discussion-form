@@ -21,6 +21,7 @@ namespace cohort_backend.wwwapi.Endpoints
             {
 
             }
+          return TypedResults.Ok();
         }
     }
 }
