@@ -16,7 +16,7 @@ namespace cohort_backend.wwwapi.Endpoints
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public static async Task<IResult> GetUsers(IUserRepository repository)
         {
-            
+            return TypedResults.Ok();
         }
     }
 }
