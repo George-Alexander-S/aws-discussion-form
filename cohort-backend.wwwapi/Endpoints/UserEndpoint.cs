@@ -1,6 +1,22 @@
-﻿namespace cohort_backend.wwwapi.Endpoints
+﻿using cohort_backend.wwwapi.Repository;
+using Microsoft.AspNetCore.Mvc;
+
+namespace cohort_backend.wwwapi.Endpoints
 {
-    public class UserEndpoint
+    public static class UserEndpoint
     {
+        public static void ConfigureUserEndpoint(this WebApplication app)
+        {
+            var userGroup = app.MapGroup("/customers");
+
+            userGroup.MapGet("/", GetUsers);
+        }
+
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public static async Task<IResult> GetUsers(IUserRepository repository)
+        {
+            
+        }
     }
 }
