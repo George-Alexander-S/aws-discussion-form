@@ -483,3 +483,4 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 /cohort-backend.wwwapi/appsettings.json
+/cohort-backend.wwwapi/appsettings.Development.json
