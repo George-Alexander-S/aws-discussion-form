@@ -13,8 +13,8 @@ namespace cohort_backend.wwwapi.Models
         [Column("content")]
         public string Content { get; set; }
 
-        [ForeignKey("contacts")]
-        public int ContactId { get; set; }
-        public Contact Contact { get; set; }
+        [ForeignKey("users")]
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 }
