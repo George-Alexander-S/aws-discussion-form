@@ -50,7 +50,6 @@ namespace cohort_backend.wwwapi.Data
         //public DbSet<Post> Post { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Post> Post { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<Comment> Comments { get; set; }
     }
 }
