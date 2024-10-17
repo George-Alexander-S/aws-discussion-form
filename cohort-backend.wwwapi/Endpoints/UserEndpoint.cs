@@ -7,7 +7,7 @@ namespace cohort_backend.wwwapi.Endpoints
     {
         public static void ConfigureUserEndpoint(this WebApplication app)
         {
-            var userGroup = app.MapGroup("/customers");
+            var userGroup = app.MapGroup("/users");
 
             userGroup.MapGet("/", GetUsers);
         }
